@@ -101,6 +101,65 @@ tamarin-prover interactive .
 ```
 ---
 
+## Tamarin Prover Useful Commands
+
+### Verify all lemmas
+```bash
+tamarin-prover protocol.spthy --prove
+```
+
+### Verify a specific lemma
+```bash
+tamarin-prover protocol.spthy --prove=LemmaName
+```
+
+### Start interactive mode
+```bash
+tamarin-prover interactive protocol.spthy
+```
+
+### Save verification results
+```bash
+tamarin-prover protocol.spthy --prove > results.txt
+```
+
+### Save and display verification results
+```bash
+tamarin-prover protocol.spthy --prove | tee results.txt
+```
+
+### Use 4 CPU cores
+```bash
+tamarin-prover protocol.spthy --prove +RTS -N4
+```
+
+### Use all available CPU cores
+```bash
+tamarin-prover protocol.spthy --prove +RTS -N
+```
+
+### Enable verbose output
+```bash
+tamarin-prover protocol.spthy --prove --verbose
+```
+
+### Generate proof output
+```bash
+tamarin-prover protocol.spthy --prove --output=proofs
+```
+
+### Show help
+```bash
+tamarin-prover --help
+```
+
+### Show installed version
+```bash
+tamarin-prover --version
+```
+
+---
+
 
 ## Summary
 
